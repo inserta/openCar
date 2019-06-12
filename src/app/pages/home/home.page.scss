@@ -1,0 +1,85 @@
+:host {
+  ion-content {
+    --background: black;
+    --color: white;
+  }
+}
+
+.header{
+    background-color: #000000a7;
+    height: 35px;
+    .titulo{
+        text-align: center;
+        height: 35px;
+        color: white;
+    }
+}
+.abriendo {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  .abierto {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .cuenta_atras {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../../../assets/img/load2.gif");
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+.info_llave {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  .llave {
+    display: flex;
+    align-items: center;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffffa7;
+    transition: 0.5s all;
+    &:hover {
+      background-color: #ffffffd3;
+      color: black;
+    }
+    .imagen {
+      display: flex;
+    }
+    .abrir {
+      display: flex;
+      padding-left: 50px;
+      padding-right: 50px;
+      .boton {
+        display: flex;
+      }
+    }
+  }
+}
+.puerta_cerrada{
+    display: flex;
+    justify-content: center;
+
+    .cerrada{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
