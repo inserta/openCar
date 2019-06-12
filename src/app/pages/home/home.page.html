@@ -1,0 +1,34 @@
+<ion-header class="header">
+    <ion-title class="titulo">
+      Llaves
+    </ion-title>
+    <ion-icon class="refresh" name="refresh" (click)="refresh()"></ion-icon>
+</ion-header>
+
+<ion-content class="container">
+  <div class="abriendo" *ngIf="abriendo" >
+      <div class="abierto">
+          Puerta abierta
+      </div>
+      <div class="cuenta_atras">
+          {{cuenta}}
+      </div>
+  </div>
+  <div class="info_llave" *ngIf="!abriendo" >
+    <div class="llave" (click)="abrirPuerta()">
+      <div class="imagen">
+          <img src="../../../assets/img/llave2.png" height="100" width="43" />
+      </div>
+      <div class="abrir">
+          <div class="boton">
+            ABRIR
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="puerta_cerrada" *ngIf="puertaCerrada" >
+      <div class="cerrada">
+          Puerta cerrada
+      </div>
+  </div> -->
+</ion-content>
